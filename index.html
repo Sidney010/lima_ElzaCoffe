@@ -1,42 +1,59 @@
 <!DOCTYPE html>
-<html lang="br-pt">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elza Coffe</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Elza Coffee</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'custom-cream': '#FFF8E8',
+            'dark-bg': '#221518',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 
-<body>
-    <header>
-        <menu>
-            <img src="./Img/logo (1).svg" alt="Logo Elza Coffe">
-            <button>
-                <img src="./img/Icon.svg" alt="Icone de Perfil">
-            </button>
-            <menu>
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#menu">Menu</a>
-                </li>
-                <li>
-                    <a href="#services">Services</a>
-                </li>
-                <li>
-                    <a href="#product">Product</a>
-                </li>
-                <li>
-                    <a href="#blog">Blog</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </menu>
-    </header>
-    <main></main>
-    <footer></footer>
+<body style="background-color: #221518;">
+  <header class="w-full bg-dark-bg py-4">
+    <div class="w-[90%] max-w-[1200px] mx-auto flex items-center justify-between">
+      <!-- Logo -->   
+      <div class="w-[20%]">
+        <img src="./Img/logo (1).svg" alt="Logo Elza Coffee" class="w-full max-w-[60px] h-auto">
+      </div>
+      
+     <!-- Navegação -->
+      <div class="flex justify-between space-x-[20%]">
+      <div class="w-[20%] flex justify-end items-center gap-4">
+        <button>
+          <img src="./img/Icon-navi.png" alt="Ícone de Perfil">
+        </button>
+      </div>
+
+      <!-- Navegação -->
+      <nav class="w-[60%]">
+        <ul class="flex justify-center space-x-6 text-sm">
+          <li><a href="#" class="text-custom-cream hover:text-amber-200">Home</a></li>
+          <li><a href="#menu" class="text-custom-cream hover:text-amber-200">Menu</a></li>
+          <li><a href="#services" class="text-custom-cream hover:text-amber-200">Services</a></li>
+          <li><a href="#product" class="text-custom-cream hover:text-amber-200">Product</a></li>
+          <li><a href="#blog" class="text-custom-cream hover:text-amber-200">Blog</a></li>
+          <li><a href="#contact" class="text-custom-cream hover:text-amber-200">Contact</a></li>
+        </ul>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main></main>
+  <footer></footer>
 </body>
 
 </html>
